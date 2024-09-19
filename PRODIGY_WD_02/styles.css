@@ -1,0 +1,113 @@
+ body {
+    font-family: 'Arial', sans-serif;
+   /* background: linear-gradient(135deg, #1f4037, #99f2c8);*/
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("clock.png");
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+  .stopwatch-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    opacity: 80%;
+    border-bottom-left-radius:60px;
+    border-bottom-right-radius:40px;
+  }
+  
+
+  .stopwatch-time {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .control-btn {
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    flex-grow: 1;
+    margin: 5px;
+  }
+  
+  .control-btn:hover {
+    background-color: #218838;
+  }
+  
+  #pause {
+    background-color: #ffc107;
+  }
+  
+  #pause:hover {
+    background-color: #e0a800;
+  }
+  
+  #reset {
+    background-color: #dc3545;
+  }
+  
+  #reset:hover {
+    background-color: #c82333;
+  }
+  
+  #lap {
+    background-color: #007bff;
+  }
+  
+  #lap:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .laps {
+    margin-top: 20px;
+  }
+  
+  #lap-list {
+    list-style-type: none;
+    padding-left: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #lap-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  #lap-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  #lap-list::-webkit-scrollbar-thumb {
+    background-color: #1d4ed8;
+    border-radius: 6px;
+  }
